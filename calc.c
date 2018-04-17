@@ -30,7 +30,7 @@ stack* evaluate_operand(stack* s, int op) {
     s = stack_pop(s, &a);
     s = stack_pop(s, &b);
     result = a+b;
-    s = stack_push(s, result); // Its not storing the result properly 
+    s = stack_push(s, result);
     printf("->%f\n", result);
     return s;
     break;
@@ -39,7 +39,7 @@ stack* evaluate_operand(stack* s, int op) {
     s = stack_pop(s, &a);
     s = stack_pop(s, &b);
     result = b-a;
-    s = stack_push(s, result); // Its not storing the result properly 
+    s = stack_push(s, result); 
     printf("->%f\n", result);
     return s;
     break;
@@ -48,7 +48,7 @@ stack* evaluate_operand(stack* s, int op) {
     s = stack_pop(s, &a);
     s = stack_pop(s, &b);
     result = a*b;
-    s = stack_push(s, result); // Its not storing the result properly 
+    s = stack_push(s, result); 
     printf("->%f\n", result);
     break;
   case OPP_DIV:
@@ -56,7 +56,7 @@ stack* evaluate_operand(stack* s, int op) {
     s = stack_pop(s, &a);
     s = stack_pop(s, &b);
     result = b / a;
-    s = stack_push(s, result); // Its not storing the result properly 
+    s = stack_push(s, result); 
     printf("->%f\n", result);
     break;
   case OPP_CLR:
